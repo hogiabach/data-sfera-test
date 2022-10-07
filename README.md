@@ -37,17 +37,20 @@ AMOCRM_CODE_AUTHORIZATION=
 ```
 php artisan migrate
 ```
-
-2. Run server
+2. Generate your application encryption key 
+```
+php artisan key:generate
+```
+3. Run server
 ```
 php artisan serve
 ```
-3. The values in leads from amoCRM API will be created or added to the Database after you access the /leads router
+4. The values in leads from amoCRM API will be created or added to the Database after you access the /leads router
 
 ```
 http://127.0.0.1:{your port}/leads
 ```
-4. If when accessing the router /leads you see the message "Authorization code has been revoked", recreate a new authorization code (Код автортзаций) and change the value of variable ``AMOCRM_CODE_AUTHORIZATION`` in .env
+5. If when accessing the router /leads you see the message "Authorization code has been revoked", recreate a new authorization code (Код автортзаций) and change the value of variable ``AMOCRM_CODE_AUTHORIZATION`` in .env
 
 ```
 AMOCRM_CODE_AUTHORIZATION=
