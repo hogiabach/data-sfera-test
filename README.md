@@ -1,9 +1,9 @@
-###Data Sfera Test
+### Data Sfera Test
 ## Getting Started
 
 I don't know how to use doker. I couldn't learn doker in a short time so here's a tutorial on how to get my code running.
 
-###Installation
+### Installation
 1. First, clone the code to your device
 ```
  git clone https://github.com/hogiabach/data-sfera-test.git
@@ -32,7 +32,7 @@ AMOCRM_BASE_DOMAIN=
 AMOCRM_CODE_AUTHORIZATION=
 ``` 
 
-###Usage
+### Usage
 1. First create Leads table in the database
 ```
 php artisan migrate
